@@ -5,7 +5,7 @@ from pptx.dml.color import RGBColor
 from pptx.enum.shapes import MSO_SHAPE
 from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 R=Path(__file__).resolve().parents[2]; D=R/'docs'
-prs=Presentation(); prs.slide_width=Inches(13.333); prs.slide_height=Inches(7.5)
+prs=Presentation(); prs.core_properties.author="Hugo PIARD et Louis BOULANGER"; prs.slide_width=Inches(13.333); prs.slide_height=Inches(7.5)
 NAVY='17394D'; TEAL='216D79'; INK='243746'; MUTED='536776'; PALE='E7F1F4'; GRAY='F3F5F6'; GOLD='A66E18'; WHITE='FFFFFF'
 def rgb(s):return RGBColor.from_string(s)
 def text(s,x,y,w,h,size=24,color=INK,bold=False,font='DejaVu Sans',align=None):
@@ -34,7 +34,7 @@ def notes(s):
 base(1,'MiniNet','Mini réseau social en console — prototype et architecture C&C')
 text('Une architecture explicite,\nune implémentation minimale.',.7,2.0,12,1.7,40,NAVY,True)
 text('Python  ·  SQLite  ·  ACME',.75,4.1,11,.7,25,TEAL,True)
-text('Binôme : ........................................ / ........................................\nMaster 2 Informatique – ALMA · Université de Nantes',.75,5.4,12,.9,17,MUTED)
+text('Binôme : Hugo PIARD et Louis BOULANGER\nMaster 2 Informatique – ALMA · Université de Nantes',.75,5.4,12,.9,17,MUTED)
 notes('45 s. Le sujet évalue la clarté architecturale plutôt que la richesse de l’interface. Présenter l’objectif et les choix de sobriété.')
 base(2,'Le périmètre fonctionnel','Les cinq exigences sont couvertes ; aucune interface graphique nécessaire.')
 panel(.6,2.05,3.98,1.72,'Comptes','Inscription et authentification locale.')

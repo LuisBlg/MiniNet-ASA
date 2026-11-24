@@ -13,7 +13,7 @@ for n,f in [('DS','DejaVuSans.ttf'),('DSB','DejaVuSans-Bold.ttf'),('DM','DejaVuS
 pdfmetrics.registerFontFamily('DS',normal='DS',bold='DSB',italic='DS',boldItalic='DSB')
 W,H=A4; M=48; CW=W-2*M
 navy=HexColor('#17394D'); teal=HexColor('#216D79'); ink=HexColor('#243746'); muted=HexColor('#536776'); pale=HexColor('#E7F1F4'); gray=HexColor('#F3F5F6'); gold=HexColor('#A66E18')
-c=canvas.Canvas(str(D/'Rapport_architecture.pdf'),pagesize=A4); c.setTitle('MiniNet — Rapport d’architecture'); c.setAuthor('Binôme ALMA M2')
+c=canvas.Canvas(str(D/'Rapport_architecture.pdf'),pagesize=A4); c.setTitle('MiniNet — Rapport d’architecture'); c.setAuthor('Hugo PIARD et Louis BOULANGER')
 styles={
  'body':ParagraphStyle('body',fontName='DS',fontSize=10.2,leading=15,textColor=ink,spaceAfter=8),
  'small':ParagraphStyle('small',fontName='DS',fontSize=8.4,leading=12,textColor=muted),
@@ -58,7 +58,7 @@ def end():
  c.setStrokeColor(HexColor('#CCD7DC'));c.line(M,42,W-M,42);c.setFont('DS',8);c.setFillColor(muted);c.drawString(M,26,'Rapport d’architecture  •  MiniNet');c.drawRightString(W-M,26,f'{page} / 9');c.showPage()
 
 start(1,'MiniNet','Rapport d’architecture logicielle — Architecture à base de composants et connecteurs (C&C)')
-para('<b>Master 2 Informatique – parcours ALMA</b><br/>Université de Nantes · année universitaire 2026–2027<br/>Binôme : ........................................ / ........................................',after=20)
+para('<b>Master 2 Informatique – parcours ALMA</b><br/>Université de Nantes · année universitaire 2026–2027<br/>Binôme : Hugo PIARD et Louis BOULANGER',after=20)
 head('Résumé')
 para('MiniNet est un prototype de réseau social local, utilisable en console. Il couvre les cinq exigences du sujet : comptes, publications, fil des contacts, messages privés et gestion des amis. Le projet privilégie la séparation des responsabilités et la description explicite des interactions plutôt que la sophistication de l’interface.')
 para('L’architecture retient sept composants et dix connecteurs : neuf appels de procédure synchrones et un bus publish/subscribe synchrone. Le modèle d’assemblage définit les ports et les opérations ; il est utilisé à l’exécution et sert à générer la spécification ACME et la matrice de traçabilité. Le stockage SQLite conserve les données métier entre deux exécutions.')
