@@ -1,5 +1,7 @@
 # MiniNet — Projet ASA, M2 ALMA
 
+Hugo PIARD & Louis BOULANGER
+
 Mini réseau social en console, conçu en composants et connecteurs. Python 3.10+ ; **aucune dépendance tierce à installer** pour lancer l'application, vérifier l'architecture ou exécuter les tests. SQLite est fourni par la bibliothèque standard des distributions Python habituelles.
 
 ## Démarrage
@@ -69,6 +71,3 @@ dot -Tsvg architecture/composants.dot -o architecture/composants.svg
 
 La spécification ACME utilise le sous-ensemble structurel (System, Component, Port, Connector, Role, Attachments). La vérification locale contrôle la synchronisation de la vue générée et le câblage effectif, mais n'est pas un compilateur ACME généraliste. Références : Carnegie Mellon University, [Acme Language Overview](https://www.cs.cmu.edu/~acme/docs/language_overview.html) et [grammaire du parseur Armani](https://www.cs.cmu.edu/~acme/html/ArmaniParser.html).
 
-## Avant le rendu
-
-Compléter les noms du binôme sur le support et la page de garde si requis (sources documentaires facultatives dans `tools/doc_sources/`). Relire le rapport, exécuter les commandes ci-dessus, répéter la démonstration et pouvoir expliquer les choix. Le prototype est volontairement local, mono-processus et non conçu pour une mise en production.
