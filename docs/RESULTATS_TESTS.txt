@@ -1,0 +1,33 @@
+Environnement de vérification : Python 3.13.5, SQLite 3.46.1, Linux x86_64
+Commande : python -m unittest discover -v
+
+test_acme_attachments_match_declared_ports_and_roles (tests.test_mininet.ArchitectureTests.test_acme_attachments_match_declared_ports_and_roles) ... ok
+test_connector_rejects_bad_contract (tests.test_mininet.ArchitectureTests.test_connector_rejects_bad_contract) ... ok
+test_documentation_is_current (tests.test_mininet.ArchitectureTests.test_documentation_is_current) ... ok
+test_event_multicast (tests.test_mininet.ArchitectureTests.test_event_multicast) ... ok
+test_no_component_to_component_imports (tests.test_mininet.ArchitectureTests.test_no_component_to_component_imports) ... ok
+test_runtime_topology (tests.test_mininet.ArchitectureTests.test_runtime_topology) ... ok
+test_demo_does_not_create_database (tests.test_mininet.ConsoleTests.test_demo_does_not_create_database) ... ok
+test_eof_and_bad_database (tests.test_mininet.ConsoleTests.test_eof_and_bad_database) ... ok
+test_full_cli_and_restart (tests.test_mininet.ConsoleTests.test_full_cli_and_restart) ... ok
+test_directory (tests.test_mininet.FunctionalTests.test_directory) ... ok
+test_feed_filters_and_orders (tests.test_mininet.FunctionalTests.test_feed_filters_and_orders) ... ok
+test_friend_errors (tests.test_mininet.FunctionalTests.test_friend_errors) ... ok
+test_friendship_is_symmetric (tests.test_mininet.FunctionalTests.test_friendship_is_symmetric) ... ok
+test_hashes_salted (tests.test_mininet.FunctionalTests.test_hashes_salted) ... ok
+test_image_bytes_export_and_access (tests.test_mininet.FunctionalTests.test_image_bytes_export_and_access) ... ok
+test_invalid_credentials (tests.test_mininet.FunctionalTests.test_invalid_credentials) ... ok
+test_invalid_images (tests.test_mininet.FunctionalTests.test_invalid_images) ... ok
+test_links (tests.test_mininet.FunctionalTests.test_links) ... ok
+test_login_and_normalization (tests.test_mininet.FunctionalTests.test_login_and_normalization) ... ok
+test_message_errors_no_events (tests.test_mininet.FunctionalTests.test_message_errors_no_events) ... ok
+test_persistence (tests.test_mininet.FunctionalTests.test_persistence) ... ok
+test_private_messages_and_notification (tests.test_mininet.FunctionalTests.test_private_messages_and_notification) ... ok
+test_register_and_duplicate (tests.test_mininet.FunctionalTests.test_register_and_duplicate) ... ok
+test_text_limits_and_sql_literals (tests.test_mininet.FunctionalTests.test_text_limits_and_sql_literals) ... ok
+test_wrong_password_and_unknown_account (tests.test_mininet.FunctionalTests.test_wrong_password_and_unknown_account) ... ok
+
+----------------------------------------------------------------------
+Ran 25 tests in 6.958s
+
+OK

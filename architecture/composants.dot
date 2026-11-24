@@ -1,0 +1,43 @@
+digraph MiniNet {
+  graph [rankdir=TB, bgcolor="white", pad=0.15, nodesep=0.27, ranksep=0.35, splines=polyline];
+  node [fontname="DejaVu Sans", fontsize=11];
+  edge [fontname="DejaVu Sans", fontsize=8, color="#506578", arrowsize=0.55];
+  Storage [shape=box, style="rounded,filled", fillcolor="#e6f0f5", color="#28546c"];
+  UserManager [shape=box, style="rounded,filled", fillcolor="#e6f0f5", color="#28546c"];
+  FriendManager [shape=box, style="rounded,filled", fillcolor="#e6f0f5", color="#28546c"];
+  PostManager [shape=box, style="rounded,filled", fillcolor="#e6f0f5", color="#28546c"];
+  MessageService [shape=box, style="rounded,filled", fillcolor="#e6f0f5", color="#28546c"];
+  NotificationService [shape=box, style="rounded,filled", fillcolor="#e6f0f5", color="#28546c"];
+  ConsoleUI [shape=box, style="rounded,filled", fillcolor="#e6f0f5", color="#28546c"];
+  {rank=same; UserManager; FriendManager; PostManager; MessageService; NotificationService;}
+  user_store [shape=ellipse, style=filled, fillcolor="#f0f2f4", color="#8294a2", label="user_store"];
+  UserManager -> user_store;
+  user_store -> Storage;
+  friend_store [shape=ellipse, style=filled, fillcolor="#f0f2f4", color="#8294a2", label="friend_store"];
+  FriendManager -> friend_store;
+  friend_store -> Storage;
+  post_store [shape=ellipse, style=filled, fillcolor="#f0f2f4", color="#8294a2", label="post_store"];
+  PostManager -> post_store;
+  post_store -> Storage;
+  message_store [shape=ellipse, style=filled, fillcolor="#f0f2f4", color="#8294a2", label="message_store"];
+  MessageService -> message_store;
+  message_store -> Storage;
+  ui_users [shape=ellipse, style=filled, fillcolor="#f0f2f4", color="#8294a2", label="ui_users"];
+  ConsoleUI -> ui_users;
+  ui_users -> UserManager;
+  ui_friends [shape=ellipse, style=filled, fillcolor="#f0f2f4", color="#8294a2", label="ui_friends"];
+  ConsoleUI -> ui_friends;
+  ui_friends -> FriendManager;
+  ui_posts [shape=ellipse, style=filled, fillcolor="#f0f2f4", color="#8294a2", label="ui_posts"];
+  ConsoleUI -> ui_posts;
+  ui_posts -> PostManager;
+  ui_messages [shape=ellipse, style=filled, fillcolor="#f0f2f4", color="#8294a2", label="ui_messages"];
+  ConsoleUI -> ui_messages;
+  ui_messages -> MessageService;
+  ui_notifications [shape=ellipse, style=filled, fillcolor="#f0f2f4", color="#8294a2", label="ui_notifications"];
+  ConsoleUI -> ui_notifications;
+  ui_notifications -> NotificationService;
+  message_bus [shape=ellipse, style=filled, fillcolor="#ffedcc", color="#a66e18"];
+  MessageService -> message_bus [color="#a66e18", style=dashed, constraint=false];
+  message_bus -> NotificationService [color="#a66e18", style=dashed, constraint=false];
+}

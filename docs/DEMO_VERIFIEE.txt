@@ -1,0 +1,283 @@
+Mode démo : alice / bob / clara, mot de passe commun : Demo2026!
+Les données de cette session ne seront pas conservées.
+
+=== MiniNet | Accueil ===
+1. Créer un compte
+2. Se connecter
+0. Quitter
+Choix : Pseudo : Mot de passe : Connexion réussie.
+
+=== MiniNet | alice ===
+[Notification] Nouveau message de bob (#1).
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : --- Fil : vos publications et celles de vos amis ---
+#2 | 2026-11-24 10:07:48 UTC | bob | link : https://www.univ-nantes.fr/
+#1 | 2026-11-24 10:07:48 UTC | bob | text : Bonjour Alice !
+
+=== MiniNet | alice ===
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : --- Messages envoyés et reçus ---
+#1 | 2026-11-24 10:07:48 UTC | bob -> alice : Salut, on révise ASA ?
+
+=== MiniNet | alice ===
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : bob
+
+=== MiniNet | alice ===
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : Chemin image : Publication #4 créée.
+
+=== MiniNet | alice ===
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : --- Fil : vos publications et celles de vos amis ---
+#4 | 2026-11-24 10:07:48 UTC | alice | image : mininet.png
+#2 | 2026-11-24 10:07:48 UTC | bob | link : https://www.univ-nantes.fr/
+#1 | 2026-11-24 10:07:48 UTC | bob | text : Bonjour Alice !
+
+=== MiniNet | alice ===
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : Destinataire : Message : Message privé #2 envoyé.
+
+=== MiniNet | alice ===
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : Déconnexion réussie.
+
+=== MiniNet | Accueil ===
+1. Créer un compte
+2. Se connecter
+0. Quitter
+Choix : Pseudo : Mot de passe : Connexion réussie.
+
+=== MiniNet | bob ===
+[Notification] Nouveau message de alice (#2).
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : --- Messages envoyés et reçus ---
+#2 | 2026-11-24 10:07:48 UTC | alice -> bob : Démo : message privé
+#1 | 2026-11-24 10:07:48 UTC | bob -> alice : Salut, on révise ASA ?
+
+=== MiniNet | bob ===
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : --- Fil : vos publications et celles de vos amis ---
+#4 | 2026-11-24 10:07:48 UTC | alice | image : mininet.png
+#2 | 2026-11-24 10:07:48 UTC | bob | link : https://www.univ-nantes.fr/
+#1 | 2026-11-24 10:07:48 UTC | bob | text : Bonjour Alice !
+
+=== MiniNet | bob ===
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : Identifiant de publication : Nouveau chemin de sortie : Image exportée.
+
+=== MiniNet | bob ===
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : Pseudo : Ami supprimé.
+
+=== MiniNet | bob ===
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : --- Fil : vos publications et celles de vos amis ---
+#2 | 2026-11-24 10:07:48 UTC | bob | link : https://www.univ-nantes.fr/
+#1 | 2026-11-24 10:07:48 UTC | bob | text : Bonjour Alice !
+
+=== MiniNet | bob ===
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : Déconnexion réussie.
+
+=== MiniNet | Accueil ===
+1. Créer un compte
+2. Se connecter
+0. Quitter
+Choix : Pseudo : Mot de passe : Connexion réussie.
+
+=== MiniNet | clara ===
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : --- Messages envoyés et reçus ---
+Aucun message.
+
+=== MiniNet | clara ===
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : --- Fil : vos publications et celles de vos amis ---
+#3 | 2026-11-24 10:07:48 UTC | clara | text : Publication hors du cercle d’amis.
+
+=== MiniNet | clara ===
+1. Publier un texte
+2. Publier un lien
+3. Publier une image
+4. Consulter le fil
+5. Exporter une image du fil
+6. Ajouter un ami
+7. Supprimer un ami
+8. Mes amis
+9. Annuaire
+10. Envoyer un message privé
+11. Mes messages privés
+0. Se déconnecter
+Choix : Déconnexion réussie.
+
+=== MiniNet | Accueil ===
+1. Créer un compte
+2. Se connecter
+0. Quitter
+Choix : Au revoir !

@@ -1,0 +1,68 @@
+System MiniNet = {
+  Component Storage = {
+    Port friends_api;
+    Port messages_api;
+    Port posts_api;
+    Port users_api;
+  };
+  Component UserManager = {
+    Port api;
+    Port store;
+  };
+  Component FriendManager = {
+    Port api;
+    Port store;
+  };
+  Component PostManager = {
+    Port api;
+    Port store;
+  };
+  Component MessageService = {
+    Port api;
+    Port events;
+    Port store;
+  };
+  Component NotificationService = {
+    Port api;
+    Port on_message;
+  };
+  Component ConsoleUI = {
+    Port friends;
+    Port messages;
+    Port notifications;
+    Port posts;
+    Port users;
+  };
+  Connector user_store = { Role caller; Role callee; Property asynchronous : boolean = false; };
+  Connector friend_store = { Role caller; Role callee; Property asynchronous : boolean = false; };
+  Connector post_store = { Role caller; Role callee; Property asynchronous : boolean = false; };
+  Connector message_store = { Role caller; Role callee; Property asynchronous : boolean = false; };
+  Connector ui_users = { Role caller; Role callee; Property asynchronous : boolean = false; };
+  Connector ui_friends = { Role caller; Role callee; Property asynchronous : boolean = false; };
+  Connector ui_posts = { Role caller; Role callee; Property asynchronous : boolean = false; };
+  Connector ui_messages = { Role caller; Role callee; Property asynchronous : boolean = false; };
+  Connector ui_notifications = { Role caller; Role callee; Property asynchronous : boolean = false; };
+  Connector message_bus = { Role publisher; Role subscriber; Property asynchronous : boolean = false; };
+  Attachments {
+    UserManager.store to user_store.caller;
+    Storage.users_api to user_store.callee;
+    FriendManager.store to friend_store.caller;
+    Storage.friends_api to friend_store.callee;
+    PostManager.store to post_store.caller;
+    Storage.posts_api to post_store.callee;
+    MessageService.store to message_store.caller;
+    Storage.messages_api to message_store.callee;
+    ConsoleUI.users to ui_users.caller;
+    UserManager.api to ui_users.callee;
+    ConsoleUI.friends to ui_friends.caller;
+    FriendManager.api to ui_friends.callee;
+    ConsoleUI.posts to ui_posts.caller;
+    PostManager.api to ui_posts.callee;
+    ConsoleUI.messages to ui_messages.caller;
+    MessageService.api to ui_messages.callee;
+    ConsoleUI.notifications to ui_notifications.caller;
+    NotificationService.api to ui_notifications.callee;
+    MessageService.events to message_bus.publisher;
+    NotificationService.on_message to message_bus.subscriber;
+  }
+}
